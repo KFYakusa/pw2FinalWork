@@ -16,7 +16,22 @@ function createTableUsers() {
       email varchar(50) not null,
       password varchar(30) not null
     );
+    
+
+    INSERT INTO users (
+      email,
+      password
+    ) VALUES (
+      'daniel@daniel.com',
+      'senhaDaniel'
+    );
   `)
+
+
 }
+
+
+
+
 
 module.exports = { pool, createTableUsers }
